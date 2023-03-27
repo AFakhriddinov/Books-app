@@ -52,7 +52,8 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 Gina Beki
+👤 Diana Beki.
+👤 Afakhriddinov.
 
 - GitHub: []()
 - Twitter: []()
