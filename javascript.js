@@ -1,42 +1,42 @@
-let array = [];
+const array = [];
 
 function addBook() {
-  let title = document.getElementById("title_input");
-  let author = document.getElementById("author_input");
-  if (title.value !== "" && author.value !== "") {
-    let book_list = document.getElementById("book_list");
+  const title = document.getElementById('title_input');
+  const author = document.getElementById('author_input');
+  if (title.value !== '' && author.value !== '') {
+    const bookList = document.getElementById('book_list');
 
-    let book_content = document.createElement("section");
+    const bookContent = document.createElement('section');
 
-    let book_title = document.createElement("h3");
-    let book_author = document.createElement("h3");
-    let remove_button = document.createElement("button");
-    let hr = document.createElement("hr");
-    book_content.style.width = "280px";
-    remove_button.style.margin = "20px";
+    const bookTitle = document.createElement('h3');
+    const bookAuthor = document.createElement('h3');
+    const removeButton = document.createElement('button');
+    const hr = document.createElement('hr');
+    bookContent.style.width = '280px';
+    removeButton.style.margin = '20px';
 
-    book_list.appendChild(book_content);
-    book_content.appendChild(book_title);
-    book_content.appendChild(book_author);
-    book_content.appendChild(remove_button);
-    book_content.appendChild(hr);
+    bookList.appendChild(bookContent);
+    bookContent.appendChild(bookTitle);
+    bookContent.appendChild(bookAuthor);
+    bookContent.appendChild(removeButton);
+    bookContent.appendChild(hr);
 
-    remove_button.innerText = "Remove";
+    removeButton.innerText = 'Remove';
 
-    book_title.innerText = "Book title: " + title.value;
-    book_author.innerText = "Book author: " + author.value;
+    bookTitle.innerText = `Book title: ${title.value}`;
+    bookAuthor.innerText = `Book author: ${author.value}`;
 
-    let i = array.length;
-    book_content.id = array.length;
+    const i = array.length;
+    bookContent.id = array.length;
 
-    let obj = { id: i, title: title.value, author: author.value };
+    const obj = { id: i, title: title.value, author: author.value };
     array.push(obj);
 
-    remove_button.onclick = function removeBook() {
-      let id = book_content.id;
+    removeButton.onclick = function removeBook() {
+      const { id } = bookContent;
 
       const indexOfObject = array.findIndex((object) => {
-        book_content.remove();
+        bookContent.remove();
         return object.id === id;
       });
 
@@ -45,14 +45,12 @@ function addBook() {
 
     //   Preserve data in the browser
 
-    localStorage.setItem("bookDetails", JSON.stringify(array));
+    localStorage.setItem('bookDetails', JSON.stringify(array));
   }
 }
 
-const main = document.getElementById("main");
-const bookListSection = document.createElement("section");
-const booksList = document.createElement("div");
-bookListSection.id = "list";
-bookListSection.innerHTML = "<h1>Awesome books</h1>";
+const bookListSection = document.createElement('section');
+bookListSection.id = 'list';
+bookListSection.innerHTML = '<h1>Awesome books</h1>';
 
 addBook();
