@@ -6,19 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Awesome books app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="form-id">
-      <div id="book_list"></div>
-      <input type="text" placeholder="Title" id="title_input" />
-      <br />
-      <br />
-      <input type="text" placeholder="Author" id="author_input" />
-      <br />
-      <br />
-      <button id="add_button" onclick="addBook()">Add</button>
-    </div>
+    <div id="book_list"></div>
+    <input type="text" placeholder="Title" id="title_input" />
+    <br />
+    <br />
+    <input type="text" placeholder="Author" id="author_input" />
+    <br />
+    <br />
+    <button id="add_button" onclick="addBook()">Add</button>
 
     <script src="./javascript.js"></script>
+
+    <div id="book_list"></div>
+    <input type="text" placeholder="Title" id="title_input" />
+    <input type="text" placeholder="Author" id="author_input" />
+    <button id="add_button" onclick="addBook()">Add</button>
+
+    <header id="header" class="d-flex row">
+      <div id="logo" class="d-flex row">
+        <i class="fa-solid fa-book-open"></i>
+        <a class="logo-text">Awesome Books</a>
+      </div>
+      <nav class="navbar">
+        <ul id="nav-list" class="d-flex row">
+          <li id="link-list" class="nav-item active"><a>List</a></li>
+          <li id="link-add" class="nav-item"><a>Add new</a></li>
+          <li id="link-contact" class="nav-item"><a>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Dynamic contents with JS-->
+    <div id="main"></div>
+
+    <footer id="footer">
+      <p id="copyright">&copy; Copyright 2022</p>
+    </footer>
+
+    <script src="index.js"></script>
+    >>>>>>> d726e0c68cd42a915b5a83053873a282b9055502
   </body>
 </html>
