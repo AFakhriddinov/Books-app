@@ -13,22 +13,6 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="book_list"></div>
-    <input type="text" placeholder="Title" id="title_input" />
-    <br />
-    <br />
-    <input type="text" placeholder="Author" id="author_input" />
-    <br />
-    <br />
-    <button id="add_button" onclick="addBook()">Add</button>
-
-    <script src="./javascript.js"></script>
-
-    <div id="book_list"></div>
-    <input type="text" placeholder="Title" id="title_input" />
-    <input type="text" placeholder="Author" id="author_input" />
-    <button id="add_button" onclick="addBook()">Add</button>
-
     <header id="header" class="d-flex row">
       <div id="logo" class="d-flex row">
         <i class="fa-solid fa-book-open"></i>
@@ -44,13 +28,20 @@
     </header>
 
     <!-- Dynamic contents with JS-->
-    <div id="main"></div>
+    <div id="main">
+      <div id="book_list"></div>
+      <br />
+      <input type="text" placeholder="Title" id="title_input" />
+      <br />
+      <br />
+      <input type="text" placeholder="Author" id="author_input" />
+      <br />
+      <br />
+      <button id="add_button" onclick="addBook()">Add</button>
+    </div>
 
-    <footer id="footer">
-      <p id="copyright">&copy; Copyright 2022</p>
-    </footer>
+    
 
-    <script src="index.js"></script>
-    >>>>>>> d726e0c68cd42a915b5a83053873a282b9055502
+    <script src="./javascript.js"></script>
   </body>
 </html>

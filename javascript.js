@@ -13,6 +13,7 @@ function addBook() {
     let remove_button = document.createElement("button");
     let hr = document.createElement("hr");
     book_content.style.width = "280px";
+    remove_button.style.margin = "20px";
 
     book_list.appendChild(book_content);
     book_content.appendChild(book_title);
@@ -47,3 +48,11 @@ function addBook() {
     localStorage.setItem("bookDetails", JSON.stringify(array));
   }
 }
+
+const main = document.getElementById("main");
+const bookListSection = document.createElement("section");
+const booksList = document.createElement("div");
+bookListSection.id = "list";
+bookListSection.innerHTML = "<h1>Awesome books</h1>";
+
+addBook();
