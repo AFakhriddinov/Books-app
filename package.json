@@ -1,0 +1,20 @@
+{
+  "name": "books-app",
+  "version": "1.0.0",
+  "description": "- is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. You will also use a medium-fidelity wireframe to build the UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AFakhriddinov/Books-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AFakhriddinov/Books-app/issues"
+  },
+  "homepage": "https://github.com/AFakhriddinov/Books-app#readme"
+}
