@@ -1,3 +1,10 @@
+class Book {
+  Constructor(title, author){
+    this.title = title
+    this.author = author
+  }
+}
+
 const array = [];
 
 function addBook() {
