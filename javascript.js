@@ -20,7 +20,6 @@ addButton.addEventListener("click", () => {
   }
 });
 
-console.log(arrays.length);
 function removeBook(id) {
   const remainedBooks = arrays.filter((array) => array.id !== id);
   localStorage.setItem("bookDetails", JSON.stringify(remainedBooks));
