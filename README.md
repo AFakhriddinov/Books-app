@@ -1,78 +1,184 @@
-# Book-app
- - is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. You will also use a medium-fidelity wireframe to build the UI.
 
-## Built With
+# Awesome Books App
 
-- HTML
 
-- CSS
+<a name="readme-top"></a>
 
-- Javascript 
+# 📗 Table of Contents
 
-- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-- Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for bestpract ices and common errors).
 
-- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
+
+# 📖 [Awesome Books App] <a name="about-project"></a>
+
+
+This project is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. You will also use a medium-fidelity wireframe to build the UI.
+
+
+## 🛠 Built With <a name="built-with"> HTML, CSS and JS</a>
+
+### Tech Stack <a name="tech-stack"></a>
+<details>
+<summary>Technologies</summary>
+  <ul>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+    <li><a href="#">GitHub</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+
+- **[Add book title and author]**
+- **[Remove added book title and author]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+ ## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
+
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps below
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+  cd my-folder
+  git clone git clone @github.com:AFakhriddinov/Books-app.git
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
 
-- Have a local version control like Git. Which is a open source distributed version control system designed for source code management.
+In order to run this project you need: 
+- Local version control like Git which is a open source distributed version control system designed for source code management.
 - A text editor (e.g Visual Studio Code, Vim, Atom & Sublime.)
 - A web browser (e.g Chrome, Safari, Mozilla Firefox.)
 - Live Server which is a web extension that helps you to live reload feature for dynamic content.
 - Install wave extension to check project accessibilty.
 
-### Live Demo
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- To view a live demo of the project you can click on this [link]().
+### Install
 
-### Getting Started
+clone this project to your local environment and open in the browser
 
-To get a local copy up and running follow these simple example steps.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+### Usage
 
-### Installation
+Use this project in the browsers of mobile phones and desktops
 
-1. Clone the repo by running the command
-   ```sh
-    git clone git@github.com:AFakhriddinov/Books-app.git
-   ```
-2. Open the directory of the project
-   ```sh
-   cd awesome-books
-   ```
-3. Open the html file
-   ```sh
-   Click and open the html file
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Authors
+### Run tests
 
-👤 Diana Beki.
-👤 Afakhriddinov.
+npm run test
 
-- GitHub: []()
-- Twitter: []()
-- LinkedIn: []()
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing
+### Deployment
 
-- Contributions, issues, and feature requests are welcome!
+You can deploy this project on GitHub Pages
 
-- Feel free to check the [issues page](https://github.com/AFakhriddinov/Books-app/issues).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Show your support
 
-- Give a ⭐️ if you like this project!
+## 👥 Authors <a name="authors"></a>
 
-## Acknowledgements
+👤 **Abdul-Aziz Fakhriddinov**
 
-- Background image using  [Unsplash](https://unsplash.com/photos/kUHfMW8awp)
+- GitHub: [@githubhandle](https://github.com/AFakhriddinov)
+- Twitter: [@facebookhandle](https://www.facebook.com/abdulaziz.faxriddinov)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdul-aziz-fakhriddinov-5297a6107/)
 
-## 📝 License
+👤 **Diana Beki**
 
-- This project is MIT licensed.
+- GitHub: [@githubhandle]()
+- Twitter: [@facebookhandle]()
+- LinkedIn: [LinkedIn]()
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+Add slideshow to headline section
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please let me know and we can improve it further. You are welcome to support this project by giving suggestions for improvement.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank and give credits to Cindy Shin whose design template was used for this project. His amazing design features made this project look more attractive
+
+I would like to thank Microverse team and reviewers who helped me make this project look more professional
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **[How can this project be imporoved]**
+
+  - [Dynamic pages could be added to this website using JavaScript]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/AFakhriddinov/Books-app/blob/book-app/LICENSE) licensed.

@@ -10,7 +10,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
