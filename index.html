@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Awesome books app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header id="header" class="d-flex row">
+      <div id="logo" class="d-flex row">
+        <i class="fa-solid fa-book-open"></i>
+        <a class="logo-text">Awesome Books</a>
+      </div>
+      <nav class="navbar">
+        <ul id="nav-list" class="d-flex row">
+          <li id="link-list" class="nav-item active"><a>List</a></li>
+          <li id="link-add" class="nav-item"><a>Add new</a></li>
+          <li id="link-contact" class="nav-item"><a>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Dynamic contents with JS-->
+    <div id="main">
+      <div id="book_list"></div>
+      <br />
+      <form action="">
+        <input type="text" placeholder="Title" id="title_input" />
+        <br />
+        <br />
+        <input type="text" placeholder="Author" id="author_input" />
+        <br />
+        <br />
+        <button id="add_button" onclick="">Add</button>
+      </form>
+    </div>
+
+    <script src="./javascript.js"></script>
+  </body>
+</html>
