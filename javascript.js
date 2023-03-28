@@ -19,6 +19,7 @@ addButton.addEventListener('click', () => {
   }
 });
 
+// eslint-disable-next-line no-unused-vars
 function removeBook(id) {
   const remainedBooks = arrays.filter((array) => array.id !== id);
   localStorage.setItem('bookDetails', JSON.stringify(remainedBooks));
