@@ -10,7 +10,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
+  background-image: url(./images/book-shelf.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
