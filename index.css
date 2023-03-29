@@ -17,6 +17,8 @@ body {
   height: 100vh;
 }
 
+/* navigation style */
+
 .d-flex {
   display: flex;
 }
@@ -86,10 +88,54 @@ ul {
   padding-bottom: 15px;
 }
 
-#list {
-  width: 65%;
-  padding: 1.2rem;
-  background-color: #e6e8e6;
-  border-radius: 4px;
-  opacity: 0.7;
+/* main content style */
+
+.main-h2 {
+  padding-bottom: 20px;
+}
+
+#book_list {
+  width: 50%;
+  border: thin solid grey;
+}
+
+.bookContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+#odd {
+  background-color: whitesmoke;
+}
+
+.removeBtn {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.submain-h2 {
+  margin: 30px;
+  border-top: thin solid black;
+  padding-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 30px;
+  width: 250px;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+#add_button {
+  width: 70px;
+  height: 25px;
+  margin-left: auto;
 }
