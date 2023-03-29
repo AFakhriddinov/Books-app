@@ -17,6 +17,8 @@ body {
   height: 100vh;
 }
 
+/* navigation style */
+
 .d-flex {
   display: flex;
 }
@@ -86,10 +88,10 @@ ul {
   padding-bottom: 15px;
 }
 
-#list {
-  width: 65%;
-  padding: 1.2rem;
-  background-color: #e6e8e6;
-  border-radius: 4px;
-  opacity: 0.7;
+#add-book {
+  display: none;
+}
+
+#contact {
+  display: none;
 }

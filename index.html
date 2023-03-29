@@ -20,26 +20,51 @@
       </div>
       <nav class="navbar">
         <ul id="nav-list" class="d-flex row">
-          <li id="link-list" class="nav-item active"><a>List</a></li>
-          <li id="link-add" class="nav-item"><a>Add new</a></li>
-          <li id="link-contact" class="nav-item"><a>Contact</a></li>
+          <li id="link-list" onclick="list()" class="nav-item active">List</li>
+          <li id="link-add" onclick="add()" class="nav-item"><a>Add new</a></li>
+          <li id="link-contact" onclick="contact()" class="nav-item">
+            <a>Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Dynamic contents with JS-->
     <div id="main">
-      <div id="book_list"></div>
-      <br />
-      <form action="">
-        <input type="text" placeholder="Title" id="title_input" />
-        <br />
-        <br />
-        <input type="text" placeholder="Author" id="author_input" />
-        <br />
-        <br />
-        <button id="add_button" onclick="">Add</button>
-      </form>
+      <div id="book_list">
+        <h2 class="main-h2">All Awesome books</h2>
+      </div>
+      <hr />
+      <div id="add-book">
+        <h2 class="submain-h2">Add a new book</h2>
+        <form action="">
+          <input
+            class="input"
+            type="text"
+            placeholder="Title"
+            id="title_input"
+          />
+
+          <input
+            class="input"
+            type="text"
+            placeholder="Author"
+            id="author_input"
+          />
+
+          <button id="add_button" onclick="">Add</button>
+        </form>
+      </div>
+      <div id="contact">
+        <h2 class="contact-h2">Contact Information</h2>
+        <p>Do you have any questions or you just want to say "Hello"?</p>
+        <p>You can reach out to us</p>
+        <ul>
+          <li>Our email: awesomebooks@mail.com</li>
+          <li>Our number: +61426427477</li>
+          <li>Our address: 29 Kingsland Road, Sydney, Australia</li>
+        </ul>
+      </div>
     </div>
 
     <script src="./javascript.js"></script>
