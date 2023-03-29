@@ -1,22 +1,22 @@
-const title = document.getElementById("title_input");
-const author = document.getElementById("author_input");
-const addButton = document.getElementById("add_button");
+const title = document.getElementById('title_input');
+const author = document.getElementById('author_input');
+const addButton = document.getElementById('add_button');
 
 class BookLibrary {
   constructor() {
-    this.arrays = JSON.parse(localStorage.getItem("bookDetails")) || [];
+    this.arrays = JSON.parse(localStorage.getItem('bookDetails')) || [];
   }
 
   addBooks(title, author, id) {
     const addedNew = { id, title, author };
     this.arrays.push(addedNew);
-    localStorage.setItem("bookDetails", JSON.stringify(this.arrays));
+    localStorage.setItem('bookDetails', JSON.stringify(this.arrays));
   }
 
   eraseBook(id) {
     const { arrays } = this;
     const erased = arrays.filter((array) => array.id !== id);
-    localStorage.setItem("bookDetails", JSON.stringify(erased));
+    localStorage.setItem('bookDetails', JSON.stringify(erased));
   }
 
   presentBooks() {
@@ -26,9 +26,9 @@ class BookLibrary {
 
 const collection = new BookLibrary();
 
-addButton.addEventListener("click", () => {
+addButton.addEventListener('click', () => {
   if (title.value && author.value) {
-    let i = Date.now();
+    const i = Date.now();
     collection.addBooks(title.value, author.value, i);
     window.location.reload();
   }
@@ -41,7 +41,7 @@ function removeBook(id) {
 }
 
 function displayBooks() {
-  const bookContent = document.getElementById("book_list");
+  const bookContent = document.getElementById('book_list');
   const allCollection = collection.presentBooks();
   for (let i = 0; i < allCollection.length; i += 1) {
     if (i % 2 === 0) {
@@ -64,10 +64,10 @@ function displayBooks() {
   }
 }
 
-const bookListSection = document.createElement("section");
-bookListSection.id = "list";
-bookListSection.innerHTML = "<h1>Awesome books</h1>";
+const bookListSection = document.createElement('section');
+bookListSection.id = 'list';
+bookListSection.innerHTML = '<h1>Awesome books</h1>';
 
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   displayBooks();
 });
