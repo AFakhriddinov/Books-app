@@ -87,3 +87,75 @@ ul {
 #main h1 {
   padding-bottom: 15px;
 }
+
+#book_list {
+  width: 65%;
+  margin: 20px;
+  padding: 1.2rem;
+  background-color: #e6e8e6;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.bookContainer {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin: 18px 0;
+  flex-direction: column;
+}
+
+#bookDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 7px;
+  font-weight: bold;
+}
+
+
+form-button {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  color: #fff;
+  background-color: #cb48b7;
+  padding: 3px 7px;
+  border: 1px solid #cb48b7;
+  box-shadow: 3px 3px 0 0 #7c7c7c;
+}
+
+
+form-button:hover,
+form-button:focus {
+  background-color: #fff;
+  color: #cb48b7;
+}
+
+.removeBtn {
+  align-self: flex-end;
+  padding: 3px 7px;
+  color: #cb48b7;
+}
+
+#add_button {
+  padding: 0.4rem;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #e6e8e6;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+#create-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 20px;
+}
+
+#create-form input {
+  font-size: 1.1rem;
+  padding: 1px 1px;
+}
