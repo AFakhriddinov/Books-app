@@ -14,7 +14,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navigation style */
@@ -167,4 +169,13 @@ form {
 
 .contact-li {
   text-align: left;
+}
+
+footer {
+  height: 60px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: auto;
 }
