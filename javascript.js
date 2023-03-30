@@ -71,3 +71,86 @@ bookListSection.innerHTML = '<h1>Awesome books</h1>';
 window.addEventListener('load', () => {
   displayBooks();
 });
+
+// eslint-disable-next-line no-unused-vars
+function list() {
+  document.getElementById('add-book').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+  document.getElementById('book-collection').style.display = 'block';
+  document.getElementById('link-list').style.color = 'blue';
+  document.getElementById('link-add').style.color = 'black';
+  document.getElementById('link-contact').style.color = 'black';
+  window.location.reload();
+}
+
+// eslint-disable-next-line no-unused-vars
+function add() {
+  document.getElementById('book-collection').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+  document.getElementById('add-book').style.display = 'block';
+  document.getElementById('link-list').style.color = 'black';
+  document.getElementById('link-add').style.color = 'blue';
+  document.getElementById('link-contact').style.color = 'black';
+}
+
+// eslint-disable-next-line no-unused-vars
+function contact() {
+  document.getElementById('book-collection').style.display = 'none';
+  document.getElementById('add-book').style.display = 'none';
+  document.getElementById('contact').style.display = 'block';
+  document.getElementById('link-list').style.color = 'black';
+  document.getElementById('link-add').style.color = 'black';
+  document.getElementById('link-contact').style.color = 'blue';
+}
+
+// eslint-disable-next-line no-unused-vars
+function showTime() {
+  const month = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  const d = new Date();
+  const monthName = month[d.getMonth()];
+  const monthDate = d.getDate();
+  const year = d.getFullYear();
+  let hour = d.getHours();
+  let minute = d.getMinutes();
+  let second = d.getSeconds();
+
+  let session = 'AM';
+
+  if (hour === 0) {
+    hour = 12;
+  }
+
+  if (hour > 12) {
+    hour -= 12;
+    session = 'PM';
+  }
+
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+  if (second < 10) {
+    second = `0${second}`;
+  }
+
+  const time = `${monthName} ${monthDate} ${year}, ${hour}:${minute}:${second} ${session}`;
+  document.getElementById('clock').innerHTML = time;
+  setTimeout(showTime, 1000);
+}
+showTime();

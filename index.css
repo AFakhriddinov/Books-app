@@ -14,7 +14,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navigation style */
@@ -58,10 +60,16 @@ ul {
   align-items: center;
 }
 
-.nav-item {
-  padding: 0 7px;
+.a {
+  margin: 0 25px;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#link-list {
+  color: blue;
 }
 
 .nav-item + .nav-item {
@@ -72,8 +80,10 @@ ul {
   color: rgba(128, 0, 128, 0.92);
 }
 
-.active {
-  color: orangered;
+#clock {
+  text-align: right;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 #main {
@@ -88,14 +98,25 @@ ul {
   padding-bottom: 15px;
 }
 
+#add-book {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
 /* main content style */
 
 .main-h2 {
   padding-bottom: 20px;
 }
 
+#book-collection {
+  width: 80%;
+}
+
 #book_list {
-  width: 50%;
   border: thin solid grey;
 }
 
@@ -118,8 +139,8 @@ ul {
 
 .submain-h2 {
   margin: 30px;
-  border-top: thin solid black;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 form {
@@ -138,4 +159,23 @@ form {
   width: 70px;
   height: 25px;
   margin-left: auto;
+}
+
+.contact-ul {
+  list-style-type: square;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+
+.contact-li {
+  text-align: left;
+}
+
+footer {
+  height: 60px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: auto;
 }
