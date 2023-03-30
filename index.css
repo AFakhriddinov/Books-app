@@ -137,8 +137,8 @@ ul {
 
 .submain-h2 {
   margin: 30px;
-  border-top: thin solid black;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 form {
@@ -159,10 +159,6 @@ form {
   margin-left: auto;
 }
 
-.submain-h2 {
-  margin-bottom: 20px;
-}
-
 .contact-ul {
   list-style-type: square;
   margin-top: 50px;
@@ -171,5 +167,4 @@ form {
 
 .contact-li {
   text-align: left;
-
 }
