@@ -20,20 +20,27 @@
       </div>
       <nav class="navbar">
         <ul id="nav-list" class="d-flex row">
-          <li id="link-list" onclick="list()" class="nav-item active">List</li>
-          <li id="link-add" onclick="add()" class="nav-item"><a>Add new</a></li>
-          <li id="link-contact" onclick="contact()" class="nav-item">
-            <a>Contact</a>
+          <li onclick="list()" class="nav-item">
+            <a id="link-list" class="a" href="#">List</a>
+          </li>
+          <li onclick="add()" class="nav-item">
+            <a id="link-add" class="a" href="#">Add new</a>
+          </li>
+          <li onclick="contact()" class="nav-item">
+            <a id="link-contact" class="a" href="#">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
+    <div id="clock" onload="showTime()"></div>
 
     <!-- Dynamic contents with JS-->
     <div id="main">
-      <div id="book_list">
-        <h2 class="main-h2">All Awesome books</h2>
+      <div id="book-collection">
+        <h2 class="submain-h2">All Awesome books</h2>
+        <div id="book_list"></div>
       </div>
+
       <div id="add-book">
         <h2 class="submain-h2">Add a new book</h2>
         <form action="">
@@ -55,16 +62,23 @@
         </form>
       </div>
       <div id="contact">
-        <h2 class="contact-h2">Contact Information</h2>
+        <h2 class="submain-h2">Contact Information</h2>
         <p>Do you have any questions or you just want to say "Hello"?</p>
         <p>You can reach out to us</p>
-        <ul>
-          <li>Our email: awesomebooks@mail.com</li>
-          <li>Our number: +61426427477</li>
-          <li>Our address: 29 Kingsland Road, Sydney, Australia</li>
+        <ul class="contact-ul">
+          <li class="contact-li">Our email: awesomebooks@mail.com</li>
+          <li class="contact-li">Our number: +61426427477</li>
+          <li class="contact-li">
+            Our address: 29 Kingsland Road, Sydney, Australia
+          </li>
         </ul>
       </div>
     </div>
+
+    <footer>
+      <i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2023. All
+      rights reserved
+    </footer>
 
     <script src="./javascript.js"></script>
   </body>
