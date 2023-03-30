@@ -135,6 +135,12 @@ ul {
   cursor: pointer;
 }
 
+.submain-h2 {
+  margin: 30px;
+  border-top: thin solid black;
+  padding-top: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -165,4 +171,5 @@ form {
 
 .contact-li {
   text-align: left;
+
 }
